@@ -1,45 +1,17 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Digital Creator Hub - Drawing Canvas</title>
-    <style>
-        body { margin: 0; background: #f0f0f0; }
-        #canvas { border: 1px solid #ccc; background: white; cursor: crosshair; }
-        #tools { position: absolute; top: 10px; left: 10px; }
-    </style>
-</head>
-<body>
-    <div id="tools">
-        <button onclick="changeColor('black')">Black</button>
-        <button onclick="changeColor('red')">Red</button>
-        <input type="range" id="brushSize" min="1" max="50" value="5" onchange="changeSize(this.value)">
-    </div>
-    <canvas id="canvas" width="800" height="600"></canvas>
-    <script>
-        const canvas = document.getElementById('canvas');
-        const ctx = canvas.getContext('2d');
-        let drawing = false;
-        let color = 'black';
-        let size = 5;
+# ADHD Cleaning System
+ADHD-Friendly Visual Cleaning System - A web app for neurodivergent users.
 
-        canvas.addEventListener('mousedown', () => drawing = true);
-        canvas.addEventListener('mouseup', () => drawing = false);
-        canvas.addEventListener('mousemove', draw);
+## Setup
+1. Clone: `git clone https://github.com/your-username/adhd-cleaning-system.git`
+2. Install: `npm install` (for backend)
+3. Run locally: `npm run dev`
 
-        function draw(e) {
-            if (!drawing) return;
-            ctx.lineWidth = size;
-            ctx.lineCap = 'round';
-            ctx.strokeStyle = color;
-            ctx.lineTo(e.clientX - canvas.offsetLeft, e.clientY - canvas.offsetTop);
-            ctx.stroke();
-            ctx.beginPath();
-            ctx.moveTo(e.clientX - canvas.offsetLeft, e.clientY - canvas.offsetTop);
-        }
+## Main File
+- `frontend/index.html`: Entry point with Google Analytics integrated.
 
-        function changeColor(newColor) { color = newColor; }
-        function changeSize(newSize) { size = newSize; }
-    </script>
-</body>
-</html>
+## Contributing
+- Fork the repo.
+- Create a branch: `git checkout -b feature/your-feature`.
+- Commit: `git commit -m "Add feature"`.
+- Push: `git push origin feature/your-feature`.
+- Open a Pull Request.
