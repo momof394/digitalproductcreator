@@ -1,17 +1,23 @@
-# ADHD Cleaning System
-ADHD-Friendly Visual Cleaning System - A web app for neurodivergent users.
+# Digital Fashion Sketchbook
+
+A web-based fashion sketchbook application for viewing and cycling through fashion outfit designs.
+
+## Features
+- Clean, modern interface for viewing fashion outfits
+- Image cycling functionality
+- Responsive design for all devices
+- Professional styling with smooth transitions
+
+## Quick Start
+1. Place fashion images in the `images/` folder
+2. Open `index.html` in a web browser
+3. Click "Next Outfit" to cycle through designs
 
 ## Setup
-1. Clone: `git clone https://github.com/your-username/adhd-cleaning-system.git`
-2. Install: `npm install` (for backend)
-3. Run locally: `npm run dev`
+See README.md for detailed setup instructions.
 
-## Main File
-- `frontend/index.html`: Entry point with Google Analytics integrated.
-
-## Contributing
-- Fork the repo.
-- Create a branch: `git checkout -b feature/your-feature`.
-- Commit: `git commit -m "Add feature"`.
-- Push: `git push origin feature/your-feature`.
-- Open a Pull Request.
+## Files
+- `index.html`: Main application
+- `script.js`: Interactive functionality
+- `images/`: Fashion outfit images
+- `README.md`: Full documentation

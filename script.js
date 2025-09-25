@@ -2,14 +2,9 @@ document.addEventListener('DOMContentLoaded', () => {
     const outfitDisplay = document.getElementById('outfit-display');
     const nextOutfitButton = document.getElementById('next-outfit-button');
 
-    // Placeholder for outfit image paths.
-    // You'll need to replace these with the actual paths to your images.
+    // Fashion outfit images for the sketchbook
     const outfits = [
-        'images/outfit1.jpg',
-        'images/outfit2.jpg',
-        'images/outfit3.jpg',
-        'images/outfit4.jpg',
-        'images/outfit5.jpg'
+        'images/outfit1.jpg'
     ];
 
     let currentOutfitIndex = 0;
